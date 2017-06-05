@@ -1,2 +1,23 @@
 ---
-# tasks file for HungryUp.desktop-dev
+- name: "Install from homebrew"
+  homebrew:
+    name:
+      - pandoc
+      - graphviz
+      - bcrypt
+      - git
+      - ssh-copy-id
+    state: present
+
+- name: "Install from homebrew cask"
+  homebrew_cask:
+    name:
+      - firefoxdeveloperedition
+      - dash # Documentations
+      - keka # unarchive
+      - slack # chat
+      - spectacle # window manager
+      - vlc # video player
+      - numi # calc
+      - iterm2
+    state: present
