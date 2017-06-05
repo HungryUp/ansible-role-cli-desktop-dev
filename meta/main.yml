@@ -9,4 +9,4 @@ galaxy_info:
         - 10.12
 
   galaxy_tags: []
-dependencies: ['HungryUp.desktop-essentials']
+dependencies: []
